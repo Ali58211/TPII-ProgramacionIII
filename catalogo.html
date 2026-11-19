@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémones</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>PokéWorld</h1>
+
+      <nav id="links">
+        <a href="index.html">Inicio</a>
+        <a href="pokemones.html">Pokémones</a>
+        <a href="personajes.html">Personajes</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="titulo">Pokémones Populares</h2>
+
+      <section class="buscador">
+        <form action="/submit" method="POST" id="form-busqueda">
+          <label for="search">Pokemon:</label>
+          <input
+            type="search"
+            id="search"
+            name="search"
+            autocomplete="off"
+            placeholder="Pikachu"
+          />
+          <button type="submit" id="btn-search">Buscar</button>
+        </form>
+      </section>
+      <div id="contenedor-pokemones"></div>
+    </main>
+    <script  src="./src/catalogo.js"></script>
+        <footer>
+      <p>© 2026 PokéWorld</p>
+      <a href="https://pokeapi.co/">Poke Api</a>
+    </footer>
+  </body>
+</html>
