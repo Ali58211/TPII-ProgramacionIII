@@ -20,22 +20,25 @@
     <main>
       <h2 class="titulo">Pokémones Populares</h2>
 
-      <section class="buscador">
-        <form action="/submit" method="POST" id="form-busqueda">
-          <label for="search">Pokemon:</label>
-          <input
-            type="search"
-            id="search"
-            name="search"
-            autocomplete="off"
-            placeholder="Pikachu"
-          />
-          <button type="submit" id="btn-search">Buscar</button>
-        </form>
-      </section>
-      <div id="contenedor-pokemones"></div>
+      <form id="form-busqueda">
+      <label for="search">Pokémon:</label>
+        <input
+          type="search"
+          id="search"
+          name="search"
+          autocomplete="off"
+          placeholder="Pikachu"
+        >
+
+        <button type="submit" id="btn-search">
+          Buscar
+        </button>
+    </form>
+
+    <div id="contenedor-pokemones"></div>
     </main>
-    <script  src="./src/catalogo.js"></script>
+    
+    <script type="module" src="./src/catalogo.js"></script>
         <footer>
       <p>© 2026 PokéWorld</p>
       <a href="https://pokeapi.co/">Poke Api</a>
